@@ -21,7 +21,6 @@ export async function GET(request){
     .from('cron-test')
     .update({ temp: random})
     .eq('id', 1)
-    console.log(data)
     
-    return new Response(JSON.stringify(datetime, random))
+    return new Response(JSON.stringify({datetime, random}))
 }
