@@ -1,8 +1,8 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import axios from 'axios'
 
-export default async function page() {
+export default async function Page() {
 
     useEffect(()=>{
         const run= async () =>{
