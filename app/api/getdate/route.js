@@ -23,5 +23,5 @@ export async function GET(request){
     .eq('id', 1)
     console.log(data)
     
-    return new Response(datetime)
+    return new Response(JSON.stringify(datetime, random))
 }
